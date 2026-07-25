@@ -1,0 +1,782 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NEXOS Borrow</title>
+    <meta name="description" content="NEXOS Borrow - Get cash without selling Bitcoin.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .borrow__hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('tt.avif') center/cover no-repeat;
+        }
+
+        .borrow__hero .hero-box,
+        .borrow__card,
+        .borrow__support-card,
+        .borrow__faq .card {
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 2rem;
+        }
+
+        .borrow__hero .hero-box {
+            padding: 4rem 2rem;
+        }
+
+        .borrow__card,
+        .borrow__support-card {
+            border: 1px solid rgba(255,255,255,.12);
+            padding: 2rem;
+        }
+
+        .borrow__card h4,
+        .borrow__support-card h3,
+        .borrow__faq .card-header button {
+            color: #fff;
+        }
+
+        .borrow__card .label {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: .35rem .75rem;
+            border-radius: 999px;
+            background: rgba(255,255,255,.08);
+            font-size: .9rem;
+        }
+
+        .borrow__results {
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 1.5rem;
+            background: rgba(255,255,255,.04);
+            padding: 2rem;
+        }
+
+        .borrow__results h4 {
+            margin-bottom: 1rem;
+        }
+
+        .borrow__calculator input,
+        .borrow__calculator select {
+            background: rgba(255,255,255,.08);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: .75rem;
+            padding: 1rem 1rem;
+            width: 100%;
+        }
+
+        .borrow__calculator label {
+            color: #cbd5e1;
+            margin-bottom: .5rem;
+            display: block;
+        }
+
+        .borrow__cta-card {
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            min-height: 100%;
+            background: rgba(255,255,255,.03);
+        }
+
+        .borrow__prices .price-row {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,.08);
+        }
+
+        .borrow__prices .price-row:last-child {
+            border-bottom: none;
+        }
+
+        .borrow__prices .price-label {
+            color: #cbd5e1;
+        }
+
+        .borrow__prices .price-value {
+            color: #fff;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .borrow__section-heading .title {
+            color: #fff;
+        }
+
+        .borrow__image-card {
+            border-radius: 1.75rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .borrow__image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer__content-wrap {
+            width: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <div id="sticky-header" class="tg-header__area transparent-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="logo">
+                                    <a href="index.html" class="flex items-center gap-2">
+                                        <img src="assets/img/nexos.png" alt="Xapo Logo" class="h-10 w-auto">
+                                
+                                    </a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html" class="section-link">Home</a></li>
+                                        <li class="menu-item-has-children active"><a href="#!">Banking</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="earn.html">Earn</a></li>
+                                                <li><a href="borrow.html">Borrow</a></li>
+                                                <li><a href="custody.html">Custody</a></li>
+                                                <li><a href="invest.html">Invest</a></li>
+                                                <li><a href="transact.html">Transact</a></li>
+                                                <li><a href="inheritance.html">Inheritance</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#market" class="section-link">Market</a></li>
+                                        <li class="menu-item-has-children"><a href="#!">Company</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="security.html">Security</a></li>
+                                                <li><a href="partnerships.html">Partnerships</a></li>
+                                                <li><a href="news.html">News & Insights</a></li>
+                                                <li><a href="help-center.html">Help Center</a></li>
+                                                <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+                                        <li class="header-btn">
+                                            <a href="https://xapobank-yanw.onrender.com" class="tg-btn" aria-label="Login">Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-nav-toggler" aria-label="Open mobile menu" role="button" tabindex="0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="3" y1="7" x2="21" y2="7" />
+                                        <line x1="3" y1="12" x2="21" y2="12" />
+                                        <line x1="3" y1="17" x2="21" y2="17" />
+                                    </svg>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn" aria-label="Close mobile menu" role="button" tabindex="0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/img/nexos.png" alt="Xapo Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                <div class="tgmobile__search">
+                    <form action="#">
+                        <input type="text" placeholder="Search here...">
+                        <button type="submit" aria-label="Search">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="mobile-menu-bottom">
+                    <ul class="list-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="earn.html">Earn</a></li>
+                        <li><a href="borrow.html">Borrow</a></li>
+                        <li><a href="custody.html">Custody</a></li>
+                        <li><a href="invest.html">Invest</a></li>
+                        <li><a href="transact.html">Transact</a></li>
+                        <li><a href="inheritance.html">Inheritance</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-area fix">
+        <section class="borrow__hero" id="borrow">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="hero-box text-white text-center">
+                            <span class="sub-title">Get Cash Without Spending Bitcoin</span>
+                            <h1 class="title mb-4">Your Bitcoin is a legacy built for the future.</h1>
+                            <p class="mb-4">Don't let the present chip away at it. We provide access to the cash you need today without forcing you to sacrifice your hard-earned wealth.</p>
+                            <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120" id="calculator">
+            <div class="container">
+                <div class="row gy-5 justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="borrow__card text-white borrow__calculator">
+                            <span class="label">How much can I borrow with my Bitcoin?</span>
+                            <div class="mb-4">
+                                <label for="borrow-term">Choose a term</label>
+                                <select id="borrow-term">
+                                    <option value="30">30 days</option>
+                                    <option value="365" selected>365 days</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="btc-amount">I have BTC</label>
+                                <input id="btc-amount" type="number" min="0" step="0.01" value="1.00" aria-label="BTC amount">
+                            </div>
+                            <div class="mb-4">
+                                <label for="ltv-level">Choose your Loan-to-Value</label>
+                                <select id="ltv-level">
+                                    <option value="20">20%</option>
+                                    <option value="30">30%</option>
+                                    <option value="40" selected>40%</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="borrow-usd">I can borrow USD</label>
+                                <input id="borrow-usd" type="text" value="USD 25,935.21" readonly>
+                            </div>
+                            <p class="text-muted">The amount may vary based on your specific situation. Please check the app for more details or reach out to your Relationship Manager. Subject to eligibility and availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="borrow__results text-white">
+                            <h4>Your results</h4>
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <p><strong>Period:</strong> <span id="result-period">365 days</span></p>
+                                    <p><strong>Initial Loan-to-Value</strong></p>
+                                    <div class="d-flex gap-3">
+                                        <span class="badge rounded-pill bg-secondary" id="result-ltv">40%</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>Annual Percentage Rate</strong></p>
+                                    <p id="result-apr">10.50%</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>Annual Interest Rate</strong></p>
+                                    <p id="result-interest-rate">10.50%</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>Nexos Bank fees</strong></p>
+                                    <p id="result-fees">USD 0</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>Repayment fees</strong></p>
+                                    <p id="result-repayment-fees">USD 0</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>Estimated variable interest</strong></p>
+                                    <p id="result-variable-interest">USD 14,154.17</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>Total Repayment</strong></p>
+                                    <p id="result-total-repayment">USD 148,955.83</p>
+                                </div>
+                                <div class="col-12">
+                                    <p><strong>BTC current price</strong></p>
+                                    <p id="result-btc-price">USD 64,838.03</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="text-muted">Figures are for illustrative purposes only.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="borrow__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/4NWbmXJWl58bzv72MZxssb-sm.png?v=1778963910739" alt="Secure vault door for asset protection">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Funds Kept Vaulted</h3>
+                        <p>All of your Bitcoin remains locked up and secure in our digital vaults when used as collateral. Additionally, your loan is limited to 40% of your Bitcoin's value to provide a strong safety buffer against market volatility.</p>
+                        <ul class="list-wrap mt-4">
+                            <li>No rehypothecation of Bitcoin</li>
+                            <li>40% LTV protection against price swings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="borrow__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/5qo9aZTErGGz1aHF1KJ14H-sm.png?v=1778962608753" alt="Minimalist clock and gold metal panel">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 text-white">
+                        <h3 class="title">Instant Approval</h3>
+                        <p>Following a quick eligibility check, you can have cash in your account in under a minute. Upon approval, your funds are ready to send, spend, or swipe.</p>
+                        <ul class="list-wrap mt-4">
+                            <li>Super fast and pre-approved with no traditional credit checks</li>
+                            <li>Cash arrives in under a minute</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="borrow__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/NiIDO9BfT7JeDo7WIyYwC-sm.png?v=1778962542289" alt="Business professional in luxury travel setting">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Cash on Demand</h3>
+                        <p>As an active member, your Bitcoin holdings and account history pave the way for pre-approved credit, providing instant access to cash whenever you need it.</p>
+                        <p>Integrated BTC and USD accounts offer a complete experience in one app.</p>
+                        <ul class="list-wrap mt-4">
+                            <li>Secure the loan with Bitcoin to receive instant USD funding</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="borrow__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/3l94XwpOrhfxXRbDsqrBvP-sm.png?v=1778962461517" alt="Professional checking mobile app after corporate ride">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 text-white">
+                        <h3 class="title">More Cash Anytime</h3>
+                        <p>Instantly top up your existing loan and get more cash when you need it without the hassle of a new application or a second loan.</p>
+                        <ul class="list-wrap mt-4">
+                            <li>Additional cash is deposited instantly once the loan is upsized</li>
+                            <li>Your loan adjusts to your life by instantly increasing your limit</li>
+                            <li>Get more cash with no hidden fees or administrative delays</li>
+                        </ul>
+                        <p class="mt-4">Don't let life’s expenses cost you your greatest asset.</p>
+                        <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Join Nexos Bank</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120" id="faq">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 text-center">
+                        <div class="section__title mb-60">
+                            <span class="sub-title">FAQs</span>
+                            <h2 class="title">Frequently asked questions</h2>
+                            <p><a href="https://www.Nexosbank.com/en/help" class="tg-btn" style="background: transparent; border: 1px solid #fff;">See all FAQs</a></p>
+                        </div>
+                        <div class="borrow__faq accordion" id="faqAccordion">
+                            <div class="card">
+                                <div class="card-header" id="faqOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Who is eligible to apply for a Nexos Bank loan?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Eligibility depends on account history, Bitcoin collateral, and compliance checks. Membership requirements may vary by region.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            How can I increase my Nexos Bank loan?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Increase your Bitcoin collateral or improve your account position, and the available loan amount will update accordingly.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How can I avoid unnecessary liquidation on my Bitcoin collateral loan?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Monitor your LTV ratio and add collateral or repay a portion of the loan if BTC price moves against your position.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            What are the interest rates and fees for a Nexos Bank loan?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Rates depend on your chosen collateral, term, and LTV. Nexos Bank fees and repayment charges are designed to stay transparent and competitive.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            What happens if I can’t repay a Nexos Bank loan on time?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        If repayment is not made, collateral may be subject to liquidation according to the loan agreement and applicable terms.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            What are the repayment terms for Nexos Bank loans?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Repayment terms vary by loan product. Review the app or contact support for the specific schedule that applies to your loan.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqSeven">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            What is a margin call on my Bitcoin loan?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        A margin call occurs when your collateral ratio falls below the required threshold and you need to add funds or collateral to maintain the loan.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4"><a href="https://www.Nexosbank.com/en/contact" class="tg-btn">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="borrow__support-card text-white">
+                            <h3 class="title">Real support, Whenever you need it</h3>
+                            <p>From exploring the BTC Fund to managing your savings, our team is ready to help — 24/7, right from your app.</p>
+                            <ul class="list-wrap mt-4">
+                                <li><strong>Dedicated relationship manager</strong> — Personalised support from your relationship manager.</li>
+                                <li><strong>24/7 assistance</strong> — Get help anytime through in-app chat or email.</li>
+                                <li><strong>Bitcoin expertise</strong> — Guidance from specialists who understand both banking and crypto.</li>
+                            </ul>
+                            <a href="https://www.Nexosbank.com/en/contact" class="tg-btn mt-3">Let's talk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="borrow__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/7jfKxblQGvm1TGc0gvuo8P-sm.png?v=1778962869098" alt="Abstract rose gold liquid metal background">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Smart Borrowing, Real Experience</h3>
+                        <p>Never Sell Your Bitcoin. Keep your Bitcoin untouched when a need for cash arises. Loan all you need, while your principal stays secure.</p>
+                        <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+                        <div class="borrow__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/e5nBdHXlXlXvdRVizK2vT-sm.png?v=1778962353818" alt="Chefs in commercial kitchen environment">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">More ways to accumulate Bitcoin</h3>
+                        <p>Explore our banking suite to keep building Bitcoin while maintaining access to cash.</p>
+                        <a href="https://www.Nexosbank.com/en/banking/earn" class="tg-btn">Get More Bitcoin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="borrow__prices text-white">
+                    <div class="price-row">
+                        <span class="price-label">Price at Nexos Bank BTC/USD</span>
+                        <span class="price-value">64,826.43</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-label">Price at Nexos Bank USDT/USD</span>
+                        <span class="price-value">0.99818082</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-label">Price at Nexos Bank USDC/USD</span>
+                        <span class="price-value">1.00</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-label">Price at Nexos Bank EUR/USD</span>
+                        <span class="price-value">1.14054767</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-label">Price at Nexos Bank GBP/USD</span>
+                        <span class="price-value">1.34209925</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__area">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Personal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Buy Crypto</a></li>
+                                <li><a href="">Flexible Savings</a></li>
+                                <li><a href="">Fixed-term Savings</a></li>
+                                <li><a href="">Exchange</a></li>
+                                <li><a href="">Credit Line</a></li>
+                                <li><a href="">Nexo Crypto Card</a></li>
+                                <li><a href="">Dual Investment</a></li>
+                                <li><a href="">Futures</a></li>
+                                <li><a href="">Loyalty Program</a></li>
+                                <li><a href="">Private Clients</a></li>
+                                <li><a href="">Tax Reporting</a></li>
+                                <li><a href="">Referral Program</a></li>
+                                <li><a href="">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Business</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Corporates</a></li>
+                                <li><a href="">Institutions</a></li>
+                                <li><a href="">White Label</a></li>
+                                <li><a href="">Nexo Ventures</a></li>
+                                <li><a href="">Payment Gateway</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Company</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Ambassadors</a></li>
+                                <li><a href="">Security</a></li>
+                                <li><a href="">Partnerships</a></li>
+                                <li><a href="">Wealth Academy</a></li>
+                                <li><a href="">Vulnerability Disclosure</a></li>
+                                <li><a href="">News & Insights</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Status Center</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Legal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Terms of Service</a></li>
+                                <li><a href="">Fee Schedule</a></li>
+                                <li><a href="">AI Chat Assistant Terms</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Affiliate Terms</a></li>
+                                <li><a href="">DeFi Terms</a></li>
+                                <li><a href="">Nexo Card Provider Terms</a></li>
+                                <li><a href="">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap footer__social-column">
+                            <h3 class="title">Social</h3>
+                            <div class="team__social-wrap">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/facebook.svg" alt="facebook" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/twitter.svg" alt="twitter" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/telegram.svg" alt="telegram" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/discord.svg" alt="discord" class="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__images mt-4 d-flex flex-wrap gap-3">
+                    <img src="64y99.jpeg" alt="footer image 1" class="img-fluid">
+                    <img src="123333.jpeg" alt="footer image 2" class="img-fluid">
+                    <img src="959585.jpeg" alt="footer image 3" class="img-fluid">
+                    <img src="8686.jpeg" alt="footer image 4" class="img-fluid">
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="copyright-text">
+                    <p>All or part of the Nexo Services, some features thereof, or some Digital Assets, are not available in certain jurisdictions, including where restrictions or limitations may apply, as indicated on the Nexo Platform and in the relevant general terms and conditions. While the nature of digital assets is unique, and when considering digital assets in the context of wealth enhancement, any such reference is for a general understanding of Nexo’s offerings. Materials related to Nexo’s services should not be treated as a guarantee of future results or as financial advice. When terms such as "up to" or "from" are used to denote limits, achieving these maximum or minimum thresholds may be conditional on additional actions or fulfilment of certain criteria and requirements that may not be attainable by all clients. Тhis material is for general information purposes only and is not intended to provide and should not be relied on for tax, legal or accounting advice. You should consult a qualified professional, as this material is not tailored to your specific circumstances. When referencing digital assets as potential investments, any similarities with the traditional concept of investments are entirely circumstantial, therefore any parallels between them should not be interpreted as deliberate or intended. Rates are subject to change and may vary by region, loyalty tier, and other applicable factors. Always refer to the Nexo app for your applicable rates. Assets under management figure updated on a quarterly basis. Latest available data as of Q1 2026</p>
+                    <p><strong>© 2018 - 2026 Nexo</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const btcPrice = 64838.03;
+        const aprRate = 10.5;
+
+        function formatUsd(value) {
+            return 'USD ' + value.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        }
+
+        function updateBorrowResults() {
+            const btcAmount = parseFloat(document.getElementById('btc-amount').value) || 0;
+            const ltv = parseFloat(document.getElementById('ltv-level').value) || 40;
+            const term = parseInt(document.getElementById('borrow-term').value, 10) || 365;
+            const borrowValue = btcAmount * btcPrice * (ltv / 100);
+            const interest = borrowValue * (aprRate / 100) * (term / 365);
+            const totalRepayment = borrowValue + interest;
+
+            document.getElementById('borrow-usd').value = formatUsd(borrowValue);
+            document.getElementById('result-period').textContent = `${term} days`;
+            document.getElementById('result-ltv').textContent = `${ltv}%`;
+            document.getElementById('result-apr').textContent = `${aprRate.toFixed(2)} %`;
+            document.getElementById('result-interest-rate').textContent = `${aprRate.toFixed(2)} %`;
+            document.getElementById('result-fees').textContent = 'USD 0';
+            document.getElementById('result-repayment-fees').textContent = 'USD 0';
+            document.getElementById('result-variable-interest').textContent = formatUsd(interest);
+            document.getElementById('result-total-repayment').textContent = formatUsd(totalRepayment);
+            document.getElementById('result-btc-price').textContent = formatUsd(btcPrice).replace('USD ', '');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('btc-amount').addEventListener('input', updateBorrowResults);
+            document.getElementById('ltv-level').addEventListener('change', updateBorrowResults);
+            document.getElementById('borrow-term').addEventListener('change', updateBorrowResults);
+            updateBorrowResults();
+        });
+    </script>
+</body>
+
+</html>
