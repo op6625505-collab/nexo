@@ -1,0 +1,612 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NEXOS Security</title>
+    <meta name="description" content="NEXOS Security - Wealth and trust that stand the test of time.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .security__hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('t.avif') center/cover no-repeat;
+        }
+
+        .security__hero .hero-box,
+        .security__stats-card,
+        .security__trust-card,
+        .security__feature-card,
+        .security__engine-card,
+        .security__cert-card,
+        .security__license-card,
+        .security__faq .card {
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 2rem;
+            border: 1px solid rgba(255,255,255,.12);
+        }
+
+        .security__hero .hero-box {
+            padding: 4rem 2rem;
+        }
+
+        .security__hero .title,
+        .security__trust-card h3,
+        .security__feature-card h4,
+        .security__engine-card h4,
+        .security__cert-card h4,
+        .security__license-card h4,
+        .security__faq .card-header button {
+            color: #fff;
+        }
+
+        .security__hero p,
+        .security__stats-card p,
+        .security__trust-card p,
+        .security__feature-card p,
+        .security__engine-card p,
+        .security__cert-card p,
+        .security__license-card p,
+        .security__faq .card-body {
+            color: #cbd5e1;
+        }
+
+        .security__stats-grid,
+        .security__features,
+        .security__engine-grid,
+        .security__certs,
+        .security__licenses {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .security__stats-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .security__features,
+        .security__engine-grid,
+        .security__certs,
+        .security__licenses {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        .security__stats-card,
+        .security__trust-card,
+        .security__feature-card,
+        .security__engine-card,
+        .security__cert-card,
+        .security__license-card {
+            padding: 2rem;
+        }
+
+        .security__image-card {
+            border-radius: 1.75rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .security__image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .security__cta-panel {
+            padding: 2rem;
+            background: rgba(255,255,255,.04);
+            border-radius: 2rem;
+            border: 1px solid rgba(255,255,255,.12);
+        }
+
+        .security__faq .card {
+            background: rgba(255,255,255,.03);
+            border: 1px solid rgba(255,255,255,.08);
+        }
+
+        .footer__content-wrap {
+            width: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <div id="sticky-header" class="tg-header__area transparent-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="logo">
+                                    <a href="index.html" class="flex items-center gap-2">
+                                        <img src="../frontend/logoooo.png" alt="NEXOS Logo" class="h-10 w-auto">
+                                       
+                                    </a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html" class="section-link">Home</a></li>
+                                        <li class="menu-item-has-children"><a href="#!">Banking</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="earn.html">Earn</a></li>
+                                                <li><a href="borrow.html">Borrow</a></li>
+                                                <li><a href="custody.html">Custody</a></li>
+                                                <li><a href="invest.html">Invest</a></li>
+                                                <li><a href="transact.html">Transact</a></li>
+                                                <li><a href="inheritance.html">Inheritance</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children active"><a href="#!">Company</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="security.html">Security</a></li>
+                                                <li><a href="partnerships.html">Partnerships</a></li>
+                                                <li><a href="news.html">News & Insights</a></li>
+                                                <li><a href="help-center.html">Help Center</a></li>
+                                                <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+                                        <li class="header-btn">
+                                            <a href="login.html" class="tg-btn" aria-label="Login">Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-nav-toggler" aria-label="Open mobile menu" role="button" tabindex="0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="3" y1="7" x2="21" y2="7" />
+                                        <line x1="3" y1="12" x2="21" y2="12" />
+                                        <line x1="3" y1="17" x2="21" y2="17" />
+                                    </svg>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn" aria-label="Close mobile menu" role="button" tabindex="0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="../frontend/logoooo.png" alt="NEXOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                <div class="tgmobile__search">
+                    <form action="#">
+                        <input type="text" placeholder="Search here...">
+                        <button type="submit" aria-label="Search">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="mobile-menu-bottom">
+                    <ul class="list-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="earn.html">Earn</a></li>
+                        <li><a href="borrow.html">Borrow</a></li>
+                        <li><a href="custody.html">Custody</a></li>
+                        <li><a href="invest.html">Invest</a></li>
+                        <li><a href="transact.html">Transact</a></li>
+                        <li><a href="inheritance.html">Inheritance</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="security.html">Security</a></li>
+                        <li><a href="partnerships.html">Partnerships</a></li>
+                        <li><a href="news.html">News & Insights</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-area fix">
+        <section class="security__hero" id="security">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="hero-box text-white text-center">
+                            <span class="sub-title">Wealth and trust that stand the test of time.</span>
+                            <h1 class="title mb-4">Your wealth deserves more than growth alone. It needs resilience too.</h1>
+                            <p class="mb-4">We deliver both, so you can build ahead with confidence.</p>
+                            <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4 about__stats-grid">
+                    <div class="security__stats-card text-center">
+                        <h2 class="title">Trusted since 2018</h2>
+                    </div>
+                    <div class="security__stats-card text-center">
+                        <h2 class="title">All-in-one digital wealth platform</h2>
+                    </div>
+                    <div class="security__stats-card text-center">
+                        <h2 class="title">Security-first by design</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="security__trust-card text-white">
+                            <h3>Our financial health.</h3>
+                            <p>Both our finances and security systems are built for long-term stability and robust financial health regardless of market conditions.</p>
+                            <div class="mt-4">
+                                <p><strong>Assets under management</strong><br>$7+ billion<br><small>Latest available data as of Q1 2026</small></p>
+                                <p><strong>Transaction volume and collateralized credit issued</strong><br>$430+ billion<br><small>Latest available data as of Q1 2026</small></p>
+                                <p><strong>Interest paid</strong><br>$1.4+ billion<br><small>Our business has enabled us to consistently pay out interest, growing client wealth since 2019.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/3Dp4lZBT8RsEnblPtlsiT0-sm.png?v=1778836143182" alt="Luxury asset security and trust visual">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4 security__trust-grid">
+                    <div class="security__trust-card text-white">
+                        <h3>Your assets, our priority.</h3>
+                        <p>We partner with top-tier custody and insurance providers, ensuring your assets are backed by millions in coverage.</p>
+                    </div>
+                </div>
+                <div class="row gy-4 mt-4 security__licenses">
+                    <div class="security__license-card text-white">
+                        <h4>Ledger (Global)</h4>
+                        <p>Your wealth benefits from Ledger Vault's institutional-grade security; and is available 24/7 via our platform.</p>
+                    </div>
+                    <div class="security__license-card text-white">
+                        <h4>Fireblocks (Global)</h4>
+                        <p>Fireblocks enables us to efficiently view, track, and manage assets across the Nexo platform.</p>
+                    </div>
+                    <div class="security__license-card text-white">
+                        <h4>Bakkt (U.S.)</h4>
+                        <p>Bakkt powers institutional-grade custody and asset management for Nexo clients in the United States.</p>
+                    </div>
+                    <div class="security__license-card text-white">
+                        <h4>Tangany (EEA)</h4>
+                        <p>Tangany is a Munich-based digital asset custodian, MiCAR-licensed and BaFin regulated.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="security__feature-card text-white">
+                            <h4>Security at your fingertips.</h4>
+                            <p>Stay on top of your account at all times with SMS verifications, email verifications, and authenticator app support.</p>
+                            <p>Access your wealth with fingerprint or face recognition technology for biometric protection.</p>
+                            <p>Maintain complete control of your wealth with instant notifications for all account activities.</p>
+                            <p>Verify the authenticity of all official communication from Nexo with a unique anti-phishing code.</p>
+                            <p>We use AES 256-bit TLS and modern encryption algorithms, protocols, and technologies.</p>
+                            <p>Manage your crypto addresses for error-free transfers and benefit from our anti-scam engine that continuously watches every withdrawal.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__engine-card text-white">
+                            <h4>Anti-scam Engine, always on.</h4>
+                            <p>Nexo’s Anti-scam protection watches over every withdrawal on the platform, detecting and preventing fraudulent activity to keep clients’ wealth safe.</p>
+                            <div class="security__engine-grid mt-4">
+                                <div class="security__engine-card text-white">
+                                    <h4>Intelligent monitoring</h4>
+                                    <p>Every withdrawal is analyzed in real time by AI against both established and emerging scam patterns, identifying risks early and preventing fraudulent activity before it happens.</p>
+                                </div>
+                                <div class="security__engine-card text-white">
+                                    <h4>Timely alerts</h4>
+                                    <p>If unusual behavior is detected, clients receive precise, easy-to-understand notifications that provide context without interrupting their experience.</p>
+                                </div>
+                                <div class="security__engine-card text-white">
+                                    <h4>Adaptive protection</h4>
+                                    <p>The Anti-scam Engine reviews each situation independently and adjusts its response, providing gentle prompts or temporarily pausing actions when risk, potential fraud, or scams are detected.</p>
+                                </div>
+                                <div class="security__engine-card text-white">
+                                    <h4>Expanding coverage</h4>
+                                    <p>Powered by data from leading blockchains, our anti-scam engine continually evolves to detect new threats and strengthen its defenses.</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="tg-btn">Learn more</a>
+                                <a href="#" class="tg-btn" style="background: transparent; border: 1px solid #fff;">Verify official channels</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4 security__certs">
+                    <div class="security__cert-card text-white">
+                        <h4>SOC 2 Type 2</h4>
+                        <p>We maintain the highest standards in cybersecurity to take care of your sensitive information — completing this audit for three years in a row.</p>
+                    </div>
+                    <div class="security__cert-card text-white">
+                        <h4>SOC 3 Type 2</h4>
+                        <p>A public-facing report showcasing our third consecutive year of independent validation for how we handle client data to an exceptionally high standard.</p>
+                    </div>
+                    <div class="security__cert-card text-white">
+                        <h4>ISO/IEC 27001:2022</h4>
+                        <p>The international standard for information security management. Our certification confirms we operate a structured, independently audited system for identifying, managing, and reducing risks to your data.</p>
+                    </div>
+                    <div class="security__cert-card text-white">
+                        <h4>ISO/IEC 27017:2015</h4>
+                        <p>Security controls specific to cloud services. This certification verifies that the cloud infrastructure holding your assets and data meets a dedicated set of protections beyond standard information security.</p>
+                    </div>
+                    <div class="security__cert-card text-white">
+                        <h4>ISO/IEC 27018:2019</h4>
+                        <p>The standard for protecting personal data in the cloud. It governs how your personally identifiable information is handled, stored, and kept private.</p>
+                    </div>
+                    <div class="security__cert-card text-white">
+                        <h4>STAR Level 1 Certification</h4>
+                        <p>The Security Trust Assurance and Risk registry encompasses key principles of transparency, rigorous auditing, and cloud security and privacy best practices.</p>
+                    </div>
+                    <div class="security__cert-card text-white">
+                        <h4>CCSS Level 3</h4>
+                        <p>The Cryptocurrency Security Standard ensures the highest level of security protocols, requiring comprehensive multi-signature schemes, rigorous auditing processes, and advanced cryptographic safeguards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-4 security__licenses">
+                    <div class="security__license-card text-white">
+                        <h4>Amazon Web Services</h4>
+                        <p>AWS delivers rock-solid cloud infrastructure trusted by top security-sensitive organizations, backed by ISO 27001 and SOC 2 compliance.</p>
+                    </div>
+                    <div class="security__license-card text-white">
+                        <h4>Cloudflare</h4>
+                        <p>Cloudflare strengthens our network and protects our platform against critical threats and DDoS attacks while keeping our internal system in check at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="security__license-card text-white">
+                            <h4>Department of Financial Protection and Innovation</h4>
+                            <p>United States, California — Financing Law License Reference No. 60DBO-109416 Company Nexo Financial LLC</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__license-card text-white">
+                            <h4>National Securities Commission (CNV)</h4>
+                            <p>Argentina — Virtual Asset Service Provider (VASP) Reference No. 159 Company Nexo Services SAA</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__license-card text-white">
+                            <h4>AUSTRAC</h4>
+                            <p>Australia — Digital Currency Exchange Provider Reference No. DCE100843695-001 Company Nexo Australia Pty Ltd</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__license-card text-white">
+                            <h4>Hong Kong Companies Registry</h4>
+                            <p>Trust or Company Service Provider License Reference No. TC007556 Company Nexo Finance Limited</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__license-card text-white">
+                            <h4>Ministry of Finance Poland</h4>
+                            <p>Registration of Activities in the Field of Virtual Currencies Reference No. RDWW-533 Company Nexo Services Sp. z o.o.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__license-card text-white">
+                            <h4>Financial Services Authority Seychelles</h4>
+                            <p>Securities Dealer License Reference No. SD121 Company Nexo Markets Ltd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="security__cta-panel text-white">
+                            <h3>24/7 client care.</h3>
+                            <p>Our expert team is available seven days a week to provide you with personalized support via chat and email.</p>
+                            <p>Client care, live assistance, help center and quick solutions to common questions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="security__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/2LZrBCo0qpWrluq88sOKYr-sm.png?v=1778835433175" alt="Premium collaborative support environment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 text-center text-white">
+                        <h2 class="title">Driving the next generation of wealth.</h2>
+                        <p>Nexo is built for pioneers ready to leverage blockchain technology to shape the next generation of wealth. Create your account today and get started.</p>
+                        <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__area">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Personal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Buy Crypto</a></li>
+                                <li><a href="">Flexible Savings</a></li>
+                                <li><a href="">Fixed-term Savings</a></li>
+                                <li><a href="">Exchange</a></li>
+                                <li><a href="">Credit Line</a></li>
+                                <li><a href="">Nexo Crypto Card</a></li>
+                                <li><a href="">Dual Investment</a></li>
+                                <li><a href="">Futures</a></li>
+                                <li><a href="">Loyalty Program</a></li>
+                                <li><a href="">Private Clients</a></li>
+                                <li><a href="">Tax Reporting</a></li>
+                                <li><a href="">Referral Program</a></li>
+                                <li><a href="">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Business</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Corporates</a></li>
+                                <li><a href="">Institutions</a></li>
+                                <li><a href="">White Label</a></li>
+                                <li><a href="">Nexo Ventures</a></li>
+                                <li><a href="">Payment Gateway</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Company</h3>
+                            <ul class="list-wrap">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="security.html">Security</a></li>
+                                <li><a href="partnerships.html">Partnerships</a></li>
+                                <li><a href="news.html">News & Insights</a></li>
+                                <li><a href="help-center.html">Help Center</a></li>
+                                <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                                <li><a href="">Vulnerability Disclosure</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Legal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Terms of Service</a></li>
+                                <li><a href="">Fee Schedule</a></li>
+                                <li><a href="">AI Chat Assistant Terms</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Affiliate Terms</a></li>
+                                <li><a href="">DeFi Terms</a></li>
+                                <li><a href="">Nexo Card Provider Terms</a></li>
+                                <li><a href="">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap footer__social-column">
+                            <h3 class="title">Social</h3>
+                            <div class="team__social-wrap">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/facebook.svg" alt="facebook" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/twitter.svg" alt="twitter" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/telegram.svg" alt="telegram" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/discord.svg" alt="discord" class="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__images mt-4 d-flex flex-wrap gap-3">
+                    <img src="64y99.jpeg" alt="footer image 1" class="img-fluid">
+                    <img src="123333.jpeg" alt="footer image 2" class="img-fluid">
+                    <img src="959585.jpeg" alt="footer image 3" class="img-fluid">
+                    <img src="8686.jpeg" alt="footer image 4" class="img-fluid">
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="copyright-text">
+                    <p>All or part of the Nexo Services, some features thereof, or some Digital Assets, are not available in certain jurisdictions, including where restrictions or limitations may apply, as indicated on the Nexo Platform and in the relevant general terms and conditions. While the nature of digital assets is unique, and when considering digital assets in the context of wealth enhancement, any such reference is for a general understanding of Nexo’s offerings. Materials related to Nexo’s services should not be treated as a guarantee of future results or as financial advice. When terms such as "up to" or "from" are used to denote limits, achieving these maximum or minimum thresholds may be conditional on additional actions or fulfilment of certain criteria and requirements that may not be attainable by all clients. Тhis material is for general information purposes only and is not intended to provide and should not be relied on for tax, legal or accounting advice. You should consult a qualified professional, as this material is not tailored to your specific circumstances. When referencing digital assets as potential investments, any similarities with the traditional concept of investments are entirely circumstantial, therefore any parallels between them should not be interpreted as deliberate or intended. Rates are subject to change and may vary by region, loyalty tier, and other applicable factors. Always refer to the Nexo app for your applicable rates. Assets under management figure updated on a quarterly basis. Latest available data as of Q1 2026</p>
+                    <p><strong>© 2018 - 2026 Nexo</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

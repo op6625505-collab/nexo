@@ -1,0 +1,695 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NEXOS Custody</title>
+    <meta name="description" content="NEXOS Custody - Store your Bitcoin for the long term.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .custody__hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('t.avif') center/cover no-repeat;
+        }
+
+        .custody__hero .hero-box,
+        .custody__feature-card,
+        .custody__support-card,
+        .custody__faq .card,
+        .custody__stats-card {
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 2rem;
+            border: 1px solid rgba(255,255,255,.12);
+        }
+
+        .custody__hero .hero-box {
+            padding: 4rem 2rem;
+        }
+
+        .custody__feature-card,
+        .custody__support-card,
+        .custody__stats-card {
+            padding: 2rem;
+        }
+
+        .custody__feature-card .title,
+        .custody__support-card .title,
+        .custody__stats-card .title {
+            color: #fff;
+        }
+
+        .custody__image-card {
+            border-radius: 1.75rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .custody__image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .custody__features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custody__features-list li {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .custody__cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .custody__cta-row .tg-btn {
+            min-width: 180px;
+        }
+
+        .custody__stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            color: #fff;
+        }
+
+        .custody__stats-grid .stat-card {
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .custody__stats-grid .stat-card strong {
+            display: block;
+            font-size: 1.75rem;
+            margin-bottom: .5rem;
+        }
+
+        .footer__content-wrap {
+            width: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <div id="sticky-header" class="tg-header__area transparent-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="logo">
+                                    <a href="index.html" class="flex items-center gap-2">
+                                        <img src="../frontend/logoooo.png" alt="NEXOS Logo" class="h-10 w-auto">
+                                    </a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html" class="section-link">Home</a></li>
+                                        <li class="menu-item-has-children active"><a href="#!">Banking</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="earn.html">Earn</a></li>
+                                                <li><a href="borrow.html">Borrow</a></li>
+                                                <li><a href="custody.html">Custody</a></li>
+                                                <li><a href="invest.html">Invest</a></li>
+                                                <li><a href="transact.html">Transact</a></li>
+                                                <li><a href="inheritance.html">Inheritance</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#market" class="section-link">Market</a></li>
+                                        <li class="menu-item-has-children"><a href="#!">Company</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="security.html">Security</a></li>
+                                                <li><a href="partnerships.html">Partnerships</a></li>
+                                                <li><a href="news.html">News & Insights</a></li>
+                                                <li><a href="help-center.html">Help Center</a></li>
+                                                <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+                                        <li class="header-btn">
+                                            <a href="login.html" class="tg-btn" aria-label="Login">Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-nav-toggler" aria-label="Open mobile menu" role="button" tabindex="0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="3" y1="7" x2="21" y2="7" />
+                                        <line x1="3" y1="12" x2="21" y2="12" />
+                                        <line x1="3" y1="17" x2="21" y2="17" />
+                                    </svg>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn" aria-label="Close mobile menu" role="button" tabindex="0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="../frontend/logoooo.png" alt="NEXOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                <div class="tgmobile__search">
+                    <form action="#">
+                        <input type="text" placeholder="Search here...">
+                        <button type="submit" aria-label="Search">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="mobile-menu-bottom">
+                    <ul class="list-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="earn.html">Earn</a></li>
+                        <li><a href="borrow.html">Borrow</a></li>
+                        <li><a href="custody.html">Custody</a></li>
+                        <li><a href="invest.html">Invest</a></li>
+                        <li><a href="transact.html">Transact</a></li>
+                        <li><a href="inheritance.html">Inheritance</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-area fix">
+        <section class="custody__hero" id="custody">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8 text-white">
+                        <div class="hero-box text-center">
+                            <span class="sub-title">Store Your Bitcoin for the Long Term</span>
+                            <h1 class="title mb-4">True wealth is the freedom to sleep soundly.</h1>
+                            <p class="mb-4">Since 2013, we have engineered a fortress for your Bitcoin, designed from the ground up to counter the risks of theft, loss and hacking.</p>
+                            <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/1TwQzJi1oCk1USRTlY8dCS-sm.png?v=1780994307926" alt="Man sitting in a hotel drinking coffee peacefully">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">You prepare for growth, we’ll plan for safety</h3>
+                        <p>With Nexos Bank you enjoy the upside of your wealth without the anxiety of protecting it. Our multiple layers of security protect your money against hacks, theft, and even loss of access. From physical bunkers to best-in-class digital cryptography, we ensure your Bitcoin remains exactly where you left it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/jyjQETgZ8JT2Mff90Q469-sm.png?v=1780994385428" alt="3d render of a security system">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 text-white">
+                        <h3 class="title">No Single Point of Failure</h3>
+                        <p>Escape the single points of failure in traditional cold storage. Instead, secure your assets in military-grade bunkers, governed by a policy-driven protocol, ensuring no single entity can ever access or move your funds alone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/4NWbmXJWl58bzv72MZxssb-sm.png?v=1778963910739" alt="Open premium steel bank vault door">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">The Better Alternative to Cold Storage</h3>
+                        <p>For ultimate peace of mind, you need more than a hardware wallet. You need the Fort Knox of Bitcoin. We built our security on a philosophy of zero compromise, creating a new standard in asset protection.</p>
+                        <ul class="custody__features-list mt-4">
+                            <li>Military-Grade Physical Vaults</li>
+                            <li>Multiple Underground Bunkers</li>
+                            <li>Armed Guards & Biometric Security</li>
+                        </ul>
+                        <a href="https://www.Nexosbank.com/en/security/our-security-system" class="tg-btn mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/4IFDZrih4N9HPNlrhtHYyT-sm.png?v=1778964949030" alt="Abstract metallic bronze and glass tech component">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 text-white">
+                        <h3 class="title">A Military-Grade Defence for Personal Wealth</h3>
+                        <p>Benefit from an institutional-grade security architecture, not often available to individual Bitcoin holders.</p>
+                        <ul class="custody__features-list mt-4">
+                            <li>MPC-CMP technology to remove a single point of failure</li>
+                            <li>Geographically Distributed Shards</li>
+                            <li>Sophisticated Encryption & Key Management</li>
+                            <li>In-App Digital Bitcoin Vault</li>
+                            <li>Zero Trust Architecture</li>
+                        </ul>
+                        <a href="https://www.Nexosbank.com/en/security/our-security-system" class="tg-btn mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/PLkElDyx3z5ymObd3XZCB-sm.png?v=1778964873968" alt="Biometric hardware security key">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Absolute Control Over Your Wealth</h3>
+                        <p>Retain absolute authority over your wealth. We ensure any vault withdrawals requires your explicit action. No one else can move your money—not hackers, and not us.</p>
+                        <ul class="custody__features-list mt-4">
+                            <li>Advanced Authentication Controls with Biometrics and Hardware Security Keys</li>
+                            <li>48-Hour Security Buffer on Vault Withdrawals</li>
+                            <li>Segregated Savings and Spending Wallets</li>
+                            <li>Set up an anti-phishing email code</li>
+                            <li>A dedicated relationship manager</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="custody__stats-grid">
+                    <div class="stat-card">
+                        <strong>167%</strong>
+                        <span>Capital Ratio</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>2013</strong>
+                        <span>Established</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>1663%</strong>
+                        <span>Liquidity Ratio</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>167%</strong>
+                        <span>Capital Ratio</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/1rPkBjJ4FnmpUXxJYRfkkl-sm.png?v=1778963828343" alt="Aerial drone view of Gibraltar ridge">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Be part of a Members-only Private Bank for BTC Holders</h3>
+                        <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Join Nexos Bank</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120" id="faq">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 text-center">
+                        <div class="section__title mb-60">
+                            <span class="sub-title">FAQs</span>
+                            <h2 class="title">Frequently asked questions</h2>
+                            <p><a href="https://www.Nexosbank.com/en/help" class="tg-btn" style="background: transparent; border: 1px solid #fff;">See all FAQs</a></p>
+                        </div>
+                        <div class="custody__faq accordion" id="faqAccordion">
+                            <div class="card">
+                                <div class="card-header" id="faqOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            How does Nexos Bank's custody solution differ from Bitcoin self-custody & hardware wallets?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Nexos Bank's custody solution combines institutional controls, regulated guarantees, and active security monitoring beyond what single-device self-custody delivers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Can I have full control over my private keys with Nexos Bank's custody solution?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        The custody service uses secure key management and trusted controls to protect your assets while providing a structured, regulated storage environment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Can I earn interest on the Bitcoin in my Vault?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Custody services may be paired with savings and lending products; check the app for which Bitcoin holdings are eligible for rewards.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Can I use my Bitcoin held in custody as collateral for a loan?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Yes, certain custody holdings may be used as collateral depending on your account status and the product terms.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            What security does Nexos Bank have in place to protect my Bitcoin holdings?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Security includes layered encryption, multi-party controls, physical vaults, and continuous monitoring to keep assets protected.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Is it possible to appoint a Bitcoin beneficiary for my assets held in custody at Nexos Bank?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Contact your relationship manager to review beneficiary options and the process for designating successors for custody holdings.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqSeven">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            What does it mean for Nexos Bank to be a "regulated" Bitcoin custodian?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+                                    <div class="card-body text-white">
+                                        Regulation means operating under financial controls, audits, and governance designed to safeguard customer assets and protect against misuse.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4"><a href="https://www.Nexosbank.com/en/contact" class="tg-btn">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="custody__support-card text-white">
+                            <h3 class="title">Real support, Whenever you need it</h3>
+                            <p>From exploring the BTC Fund to managing your savings, our team is ready to help — 24/7, right from your app.</p>
+                            <ul class="list-wrap mt-4">
+                                <li><strong>Dedicated relationship manager</strong> — Personalised support from your relationship manager.</li>
+                                <li><strong>24/7 assistance</strong> — Get help anytime through in-app chat or email.</li>
+                                <li><strong>Bitcoin expertise</strong> — Guidance from specialists who understand both banking and crypto.</li>
+                            </ul>
+                            <a href="https://www.Nexosbank.com/en/contact" class="tg-btn mt-3">Let's talk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/7jfKxblQGvm1TGc0gvuo8P-sm.png?v=1778962869098" alt="Abstract rose gold liquid metal texture">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Hear from our Members</h3>
+                        <p>Protect what you have. Profit from what’s next. Nexos Bank keeps your assets safe while you focus on growth.</p>
+                        <a href="https://www.Nexosbank.com/en/membership" class="tg-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-6 col-md-3">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/2zArlVtKvtVdDCvuraP2OE-sm.png?v=1778964561483" alt="Forbes media brand logo" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/37bWMR2upDgcIHOAsPmMAs-sm.png?v=1778964492680" alt="Modern Bitcoin token graphic emblem" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/2msH3BQAe4gJciWnxY3gfa-sm.png?v=1778964331189" alt="UK FinTech Awards finalist badge" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/2Gw6ngZCUd8Fpr8a1SgqHQ-sm.png?v=1778964397297" alt="Swiss Fort Knox certification emblem" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row gy-4 justify-content-center mt-4">
+                    <div class="col-6 col-md-3">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/5smDDzbJ8bMycvs9qLU30F-sm.png?v=1778964240988" alt="UK FinTech Awards 2026 badge" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/76rjtN5bLXp0Zmsuap844Y-sm.png?v=1778963646648" alt="Mature couple using mobile banking" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="custody__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/3eQGJ6Q56H0ixyuZSC7Hbv-sm.png?v=1778963458501" alt="Abstract dark metallic wave texture backdrop">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white">
+                        <h3 class="title">Need Cash Now?</h3>
+                        <p>Borrow Against Bitcoin when you need fast access to liquidity without selling your holdings.</p>
+                        <a href="https://www.Nexosbank.com/en/banking/borrow" class="tg-btn">Borrow Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__area">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Personal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Buy Crypto</a></li>
+                                <li><a href="">Flexible Savings</a></li>
+                                <li><a href="">Fixed-term Savings</a></li>
+                                <li><a href="">Exchange</a></li>
+                                <li><a href="">Credit Line</a></li>
+                                <li><a href="">Nexo Crypto Card</a></li>
+                                <li><a href="">Dual Investment</a></li>
+                                <li><a href="">Futures</a></li>
+                                <li><a href="">Loyalty Program</a></li>
+                                <li><a href="">Private Clients</a></li>
+                                <li><a href="">Tax Reporting</a></li>
+                                <li><a href="">Referral Program</a></li>
+                                <li><a href="">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Business</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Corporates</a></li>
+                                <li><a href="">Institutions</a></li>
+                                <li><a href="">White Label</a></li>
+                                <li><a href="">Nexo Ventures</a></li>
+                                <li><a href="">Payment Gateway</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Company</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Ambassadors</a></li>
+                                <li><a href="">Security</a></li>
+                                <li><a href="">Partnerships</a></li>
+                                <li><a href="">Wealth Academy</a></li>
+                                <li><a href="">Vulnerability Disclosure</a></li>
+                                <li><a href="">News & Insights</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Status Center</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Legal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Terms of Service</a></li>
+                                <li><a href="">Fee Schedule</a></li>
+                                <li><a href="">AI Chat Assistant Terms</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Affiliate Terms</a></li>
+                                <li><a href="">DeFi Terms</a></li>
+                                <li><a href="">Nexo Card Provider Terms</a></li>
+                                <li><a href="">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap footer__social-column">
+                            <h3 class="title">Social</h3>
+                            <div class="team__social-wrap">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/facebook.svg" alt="facebook" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/twitter.svg" alt="twitter" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/telegram.svg" alt="telegram" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/discord.svg" alt="discord" class="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__images mt-4 d-flex flex-wrap gap-3">
+                    <img src="64y99.jpeg" alt="footer image 1" class="img-fluid">
+                    <img src="123333.jpeg" alt="footer image 2" class="img-fluid">
+                    <img src="959585.jpeg" alt="footer image 3" class="img-fluid">
+                    <img src="8686.jpeg" alt="footer image 4" class="img-fluid">
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="copyright-text">
+                    <p>All or part of the Nexo Services, some features thereof, or some Digital Assets, are not available in certain jurisdictions, including where restrictions or limitations may apply, as indicated on the Nexo Platform and in the relevant general terms and conditions. While the nature of digital assets is unique, and when considering digital assets in the context of wealth enhancement, any such reference is for a general understanding of Nexo’s offerings. Materials related to Nexo’s services should not be treated as a guarantee of future results or as financial advice. When terms such as "up to" or "from" are used to denote limits, achieving these maximum or minimum thresholds may be conditional on additional actions or fulfilment of certain criteria and requirements that may not be attainable by all clients. Тhis material is for general information purposes only and is not intended to provide and should not be relied on for tax, legal or accounting advice. You should consult a qualified professional, as this material is not tailored to your specific circumstances. When referencing digital assets as potential investments, any similarities with the traditional concept of investments are entirely circumstantial, therefore any parallels between them should not be interpreted as deliberate or intended. Rates are subject to change and may vary by region, loyalty tier, and other applicable factors. Always refer to the Nexo app for your applicable rates. Assets under management figure updated on a quarterly basis. Latest available data as of Q1 2026</p>
+                    <p><strong>© 2018 - 2026 Nexo</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

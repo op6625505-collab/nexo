@@ -1,0 +1,518 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NEXOS Support</title>
+    <meta name="description" content="NEXOS Support - Real support when you need it, with dedicated managers, email, app help, FAQs and resources.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .support__hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('t.avif') center/cover no-repeat;
+        }
+
+        .support__hero .hero-box,
+        .support__section,
+        .support__info-card,
+        .support__insight-card,
+        .support__article-card,
+        .support__newsletter {
+            background: rgba(0,0,0,.55);
+            border-radius: 2rem;
+            border: 1px solid rgba(255,255,255,.12);
+            padding: 2rem;
+        }
+
+        .support__hero .hero-box {
+            padding: 4rem 2rem;
+        }
+
+        .support__hero .title,
+        .support__section h3,
+        .support__info-card h4,
+        .support__article-card h4,
+        .support__newsletter h2 {
+            color: #fff;
+        }
+
+        .support__hero p,
+        .support__section p,
+        .support__info-card p,
+        .support__article-card p,
+        .support__newsletter p {
+            color: #cbd5e1;
+        }
+
+        .support__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .support__buttons .tg-btn {
+            min-width: 170px;
+        }
+
+        .support__grid,
+        .support__insights {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .support__grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .support__insights {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .support__article-card {
+            min-height: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .support__article-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .support__info-card a,
+        .support__article-card a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .support__info-card a img,
+        .support__article-card a img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .support__footer-note {
+            color: #cbd5e1;
+            font-size: .95rem;
+        }
+
+        .support__image-card {
+            border-radius: 1.75rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .support__image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer__content-wrap {
+            width: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <div id="sticky-header" class="tg-header__area transparent-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="logo">
+                                    <a href="index.html" class="flex items-center gap-2">
+                                        <img src="../frontend/logoooo.png" alt="NEXOS Logo" class="h-10 w-auto">
+                                        
+                                    </a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li><a href="index.html" class="section-link">Home</a></li>
+                                        <li class="menu-item-has-children"><a href="#!">Resources</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="support.html" class="active">Support</a></li>
+                                                <li><a href="help-center.html">Help Center</a></li>
+                                                <li><a href="news.html">FAQs & Resources</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="#!">Banking</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="earn.html">Earn</a></li>
+                                                <li><a href="borrow.html">Borrow</a></li>
+                                                <li><a href="custody.html">Custody</a></li>
+                                                <li><a href="invest.html">Invest</a></li>
+                                                <li><a href="transact.html">Transact</a></li>
+                                                <li><a href="inheritance.html">Inheritance</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="#!">Company</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="security.html">Security</a></li>
+                                                <li><a href="partnership.html">Partnership</a></li>
+                                                <li><a href="news.html">News & Insights</a></li>
+                                                <li><a href="help-center.html">Help Center</a></li>
+                                                <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+                                        <li class="header-btn">
+                                            <a href="login.html" class="tg-btn" aria-label="Login">Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-nav-toggler" aria-label="Open mobile menu" role="button" tabindex="0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="3" y1="7" x2="21" y2="7" />
+                                        <line x1="3" y1="12" x2="21" y2="12" />
+                                        <line x1="3" y1="17" x2="21" y2="17" />
+                                    </svg>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn" aria-label="Close mobile menu" role="button" tabindex="0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="../frontend/logoooo.png" alt="NEXOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                <div class="tgmobile__search">
+                    <form action="#">
+                        <input type="text" placeholder="Search here...">
+                        <button type="submit" aria-label="Search">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="mobile-menu-bottom">
+                    <ul class="list-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="earn.html">Earn</a></li>
+                        <li><a href="borrow.html">Borrow</a></li>
+                        <li><a href="custody.html">Custody</a></li>
+                        <li><a href="invest.html">Invest</a></li>
+                        <li><a href="transact.html">Transact</a></li>
+                        <li><a href="inheritance.html">Inheritance</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="security.html">Security</a></li>
+                        <li><a href="partnership.html">Partnership</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-area fix">
+        <section class="support__hero" id="support">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="hero-box text-center">
+                            <span class="sub-title">Real support when you need it</span>
+                            <h1 class="title mb-4">There are no small questions when it comes to your wealth.</h1>
+                            <p class="mb-4">Ask us anything, at any hour, and experience a level of support that goes far beyond traditional customer service.</p>
+                            <div class="support__buttons">
+                                <a href="https://www.Nexosbank.com/en/contact#supportSection" class="tg-btn">Get support</a>
+                                <a href="https://www.Nexosbank.com/en/contact#faqSection" class="tg-btn" style="background: transparent; border: 1px solid #fff;">See our FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="support__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/5dRjc2rfMDsLhkwU81YlvC-sm.png?v=1780664503743" alt="Nexos Bank Support Team">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="support__section text-white">
+                            <h3>We are always here for you</h3>
+                            <p>Enjoy bespoke banking solutions with your dedicated relationship manager. Easily schedule a call with your manager or chat with our support team 24/7 directly in the Nexos Bank app. Alternatively, reach us via email at any time.</p>
+                            <div class="support__grid">
+                                <div class="support__info-card">
+                                    <h4>Write to support@Nexos.com</h4>
+                                    <p><a href="mailto:support@Nexos.com">support@Nexos.com</a></p>
+                                    <a href="https://Nexos.com/app/help">Get support within Nexos app <img src="assets/img/icon-arrow-right.svg" alt="Arrow"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="support__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/6pIDhjYLBgbKfOH9OvTX1C-sm.png?v=1780664621361" alt="Magnifying glass">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="support__section text-white">
+                            <h3>Instant answers, anytime</h3>
+                            <p>Get instant answers to common questions about account features, security protocols, deposits, and more in our FAQ.</p>
+                            <a href="https://www.Nexosbank.com/en/help" class="tg-btn">See FAQs & Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120 bg-black">
+            <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="support__section text-white">
+                            <h3>Visit our Gibraltar headquarters</h3>
+                            <p>We always welcome members to connect with our team in person at our headquarters located at One Grand Casemates Square, Gibraltar, GX11 1AA.</p>
+                            <a href="https://maps.app.goo.gl/zYzUyhSMFYWzRpFE8" class="tg-btn">Open in Maps</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="support__image-card">
+                            <img src="https://static-media-cdn.Nexosbank.com/images/image-media/s1/pM3WbKViOFjzu7RGDd6jm-sm.png?v=1780664804671" alt="Nexos Bank Head Quarters">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-py-120">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-8 mx-auto text-center text-white">
+                        <h2 class="title mb-3">The Nexos Insider</h2>
+                    </div>
+                </div>
+                <div class="row gy-4 support__insights">
+                    <div class="support__article-card text-white">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/article/s3/3QqcQA83ScDm1pk2GDyy8g.webp?v=1781608977854" alt="Nexos Insider">
+                        <h4>Nexos Bank</h4>
+                        <p>Better banking for your friend, $500 USD in BTC for both of you. Get $500 USD in Bitcoin for every friend you refer to Nexos Bank. No limits, no catch – just BTC rewards for you and your network.</p>
+                        <a href="https://www.Nexosbank.com/en/blog/referral-programme-bitcoin-rewards">Read Article <img src="assets/img/icon-arrow-right.svg" alt="Arrow"></a>
+                    </div>
+                    <div class="support__article-card text-white">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/article/s3/46MDWcmUjSFjw40xTHmurf.webp?v=1784198533789" alt="Loans article">
+                        <h4>Loans</h4>
+                        <p>The Bitcoin loan strategy: Get liquidity without selling.</p>
+                        <a href="https://www.Nexosbank.com/en/blog/bitcoin-loan-strategy">Read Article <img src="assets/img/icon-arrow-right.svg" alt="Arrow"></a>
+                    </div>
+                    <div class="support__article-card text-white">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/article/s3/3bHQrapIvw6OvRAeO7LcCR.webp?v=1784032041084" alt="Regulated crypto off ramp">
+                        <h4>Nexos Bank</h4>
+                        <p>Nexos Bank: The Gold Standard for Regulated Crypto Off-Ramping.</p>
+                        <a href="https://www.Nexosbank.com/en/blog/regulated-crypto-off-ramp">Read Article <img src="assets/img/icon-arrow-right.svg" alt="Arrow"></a>
+                    </div>
+                    <div class="support__article-card text-white">
+                        <img src="https://static-media-cdn.Nexosbank.com/images/article/s3/sY9fB0y325Jqf0dZWrjE6.webp?v=1776423797745" alt="Grow article">
+                        <h4>Grow</h4>
+                        <p>The smart Bitcoin accumulator strategy: How to grow your Bitcoin wealth in 2026.</p>
+                        <a href="https://www.Nexosbank.com/en/blog/smart-bitcoin-accumulator-strategy">Read Article <img src="assets/img/icon-arrow-right.svg" alt="Arrow"></a>
+                    </div>
+                </div>
+                <div class="row gy-4 justify-content-center mt-4">
+                    <div class="col-xl-6 text-center text-white">
+                        <p class="support__footer-note">Keep exploring the latest insights and banking strategies from Nexos Bank Insider.</p>
+                        <a href="https://www.Nexosbank.com/en/insider" class="tg-btn">Keep exploring</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter__area section-py-120 bg-black">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="support__newsletter text-center">
+                            <span class="sub-title">Be in the know.</span>
+                            <h2 class="title">Unlock the future of money.</h2>
+                            <p>Get the latest Bitcoin news, product updates, and exclusive insights from Nexos Bank.</p>
+                            <form action="#" class="newsletter__form d-flex justify-content-center align-items-center flex-wrap mt-4">
+                                <input type="email" placeholder="Enter your email" required class="form-control mb-3 mb-md-0" style="max-width: 380px; margin-right: 1rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: #fff;">
+                                <button type="submit" class="tg-btn">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__area">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Personal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Buy Crypto</a></li>
+                                <li><a href="">Flexible Savings</a></li>
+                                <li><a href="">Fixed-term Savings</a></li>
+                                <li><a href="">Exchange</a></li>
+                                <li><a href="">Credit Line</a></li>
+                                <li><a href="">Nexo Crypto Card</a></li>
+                                <li><a href="">Dual Investment</a></li>
+                                <li><a href="">Futures</a></li>
+                                <li><a href="">Loyalty Program</a></li>
+                                <li><a href="">Private Clients</a></li>
+                                <li><a href="">Tax Reporting</a></li>
+                                <li><a href="">Referral Program</a></li>
+                                <li><a href="">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Business</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Corporates</a></li>
+                                <li><a href="">Institutions</a></li>
+                                <li><a href="">White Label</a></li>
+                                <li><a href="">Nexo Ventures</a></li>
+                                <li><a href="">Payment Gateway</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Company</h3>
+                            <ul class="list-wrap">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="security.html">Security</a></li>
+                                <li><a href="partnership.html">Partnership</a></li>
+                                <li><a href="news.html">News & Insights</a></li>
+                                <li><a href="help-center.html">Help Center</a></li>
+                                <li><a href="wealth-academy.html">Wealth Academy</a></li>
+                                <li><a href="">Vulnerability Disclosure</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap">
+                            <h3 class="title">Legal</h3>
+                            <ul class="list-wrap">
+                                <li><a href="">Terms of Service</a></li>
+                                <li><a href="">Fee Schedule</a></li>
+                                <li><a href="">AI Chat Assistant Terms</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Affiliate Terms</a></li>
+                                <li><a href="">DeFi Terms</a></li>
+                                <li><a href="">Nexo Card Provider Terms</a></li>
+                                <li><a href="">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="footer__content-wrap footer__social-column">
+                            <h3 class="title">Social</h3>
+                            <div class="team__social-wrap">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/facebook.svg" alt="facebook" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/twitter.svg" alt="twitter" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/telegram.svg" alt="telegram" class="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <img src="assets/img/icon/discord.svg" alt="discord" class="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__images mt-4 d-flex flex-wrap gap-3">
+                    <img src="64y99.jpeg" alt="footer image 1" class="img-fluid">
+                    <img src="123333.jpeg" alt="footer image 2" class="img-fluid">
+                    <img src="959585.jpeg" alt="footer image 3" class="img-fluid">
+                    <img src="8686.jpeg" alt="footer image 4" class="img-fluid">
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="copyright-text">
+                    <p>All or part of the Nexo Services, some features thereof, or some Digital Assets, are not available in certain jurisdictions, including where restrictions or limitations may apply, as indicated on the Nexo Platform and in the relevant general terms and conditions. While the nature of digital assets is unique, and when considering digital assets in the context of wealth enhancement, any such reference is for a general understanding of Nexo’s offerings. Materials related to Nexo’s services should not be treated as a guarantee of future results or as financial advice. When terms such as "up to" or "from" are used to denote limits, achieving these maximum or minimum thresholds may be conditional on additional actions or fulfilment of certain criteria and requirements that may not be attainable by all clients. Тhis material is for general information purposes only and is not intended to provide and should not be relied on for tax, legal or accounting advice. You should consult a qualified professional, as this material is not tailored to your specific circumstances. When referencing digital assets as potential investments, any similarities with the traditional concept of investments are entirely circumstantial, therefore any parallels between them should not be interpreted as deliberate or intended. Rates are subject to change and may vary by region, loyalty tier, and other applicable factors. Always refer to the Nexo app for your applicable rates. Assets under management figure updated on a quarterly basis. Latest available data as of Q1 2026</p>
+                    <p><strong>© 2018 - 2026 Nexo</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
