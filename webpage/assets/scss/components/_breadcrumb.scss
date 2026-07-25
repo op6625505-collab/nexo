@@ -1,0 +1,90 @@
+@use '../utils' as *;
+
+/*=========================
+      Breadcrumb
+===========================*/
+.breadcrumb {
+    &__area {
+        &-two {
+            padding: 180px 0 100px;
+            position: relative;
+            z-index: 1;
+            @media #{$md} {
+                padding: 150px 0 80px;
+            }
+            @media #{$xs} {
+                padding: 120px 0 60px;
+            }
+        }
+    }
+    &__bg {
+        background-size: cover;
+        background-position: bottom center;
+        padding: 245px 0 145px;
+        position: relative;
+        z-index: 1;
+        @media #{$xl} {
+            padding: 215px 0 120px;
+        }
+        @media #{$lg} {
+            padding: 185px 0 110px;
+        }
+        @media #{$xs} {
+            padding: 165px 0 100px;
+        }
+    }
+    &__content {
+        & .title {
+            margin-bottom: 0 !important;
+        }
+        & p {
+            margin-bottom: 0 !important;
+            font-size: 20px;
+            margin-top: 8px;
+        }
+        & .blog__post-meta {
+            justify-content: center;
+        }
+        &-three {
+            & .title {
+                font-size: 48px !important;
+                @media #{$lg} {
+                    font-size: 40px !important;
+                }
+                @media #{$xs} {
+                    font-size: 32px !important;
+                }
+                & br {
+                    @media #{$md} {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &__shape {
+        pointer-events: none;
+        & img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -40%;
+            z-index: -1;
+        }
+        &-two {
+            & img {
+                position: absolute;
+                z-index: -1;
+                pointer-events: none;
+                &:nth-child(1) {
+                    left: 0;
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
