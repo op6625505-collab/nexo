@@ -1,0 +1,65 @@
+@use '../utils' as *;
+
+/*=============================
+    	09. Testimonial
+===============================*/
+.testimonial {
+    &__area {
+        position: relative;
+        z-index: 1;
+    }
+    &__item {
+        border-radius: 10px;
+        background: linear-gradient(140deg, #222325 0%, rgba(21, 21, 21, 0) 100%);
+        border: 1px solid var(--tg-border-1);
+        padding: 30px 30px;
+        @media #{$lg} {
+            padding: 25px 25px;
+        }
+        & > p {
+            margin-bottom: 0;
+            font-size: 20px;
+            color: var(--tg-color-white-default);
+            @media #{$lg} {
+                font-size: 16px;
+            }
+        }
+    }
+    &__author {
+        @include flexbox();
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 60px;
+        @media #{$lg} {
+            margin-bottom: 30px;
+        }
+        & .thumb {
+            width: 60px;
+            flex: 0 0 auto;
+            & img {
+                width: 100%;
+                @include border-radius(50%);
+            }
+        }
+        & .content {
+            & .title {
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            & span {
+                display: block;
+                font-size: 16px;
+            }
+        }
+    }
+    &__shape {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        opacity: .8;
+    }
+}
+
+
